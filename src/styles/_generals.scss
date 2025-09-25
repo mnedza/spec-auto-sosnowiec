@@ -1,0 +1,43 @@
+@use "./variables";
+
+.wrapper {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header-button {
+  margin-left: 2.5rem;
+}
+
+.about,
+.benefits,
+.services,
+.faq,
+.testimonials,
+.contact {
+  &__title {
+    font-size: 4.7rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 12rem;
+      height: 0.7rem;
+      background: variables.$redPrimary;
+      margin: 1rem auto 0;
+    }
+
+    &--left {
+      text-align: left;
+
+      &::after {
+        width: 22rem;
+        margin: 1rem 0 0 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@use "./variables";
+
+.footer {
+  background-color: variables.$deep-dark;
+  color: variables.$whiteColor;
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 1.4rem;
+  position: relative;
+
+  &__line {
+    height: 2px;
+    background-color: variables.$gray-description;
+    margin: 0 auto 2rem;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+
+    &--icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.5rem;
+      height: 3.5rem;
+      color: variables.$gray-description;
+      transition: color 0.3s;
+      &:hover {
+        color: variables.$whiteColor;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: variables.$gray-description;
+  }
+}

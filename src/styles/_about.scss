@@ -1,0 +1,81 @@
+@use "./variables";
+
+.about {
+  padding: 12rem 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__description {
+    padding: 0 2rem;
+  }
+  &__heading,
+  &__text,
+  &__button {
+    margin-bottom: 4rem;
+  }
+
+  &__button {
+    margin: auto 0;
+  }
+
+  &__heading {
+    font-size: 4.7rem;
+  }
+
+  &__text {
+    font-size: 2.6rem;
+  }
+
+  &__highlight {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 992px) {
+  .about {
+    &__text {
+      font-size: 2.2rem;
+    }
+    &__image {
+      img {
+        max-width: 40rem;
+        max-height: 40rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .about {
+    &__text {
+      // max-width: 120rem;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__image {
+      img {
+        display: none;
+      }
+    }
+
+    &__button {
+      button {
+        margin-top: 2rem;
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    &__heading {
+      margin-bottom: 2rem;
+    }
+  }
+}

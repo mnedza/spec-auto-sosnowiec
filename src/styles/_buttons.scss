@@ -1,0 +1,57 @@
+@use "sass:color";
+@use "./variables";
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.8rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 2rem;
+
+  &--primary {
+    border: none;
+    color: variables.$whiteColor;
+
+    &.btn--red {
+      background: variables.$redPrimary;
+
+      &:hover {
+        background: rgb(154, 0, 0);
+      }
+    }
+
+    &.btn--blue {
+      background: variables.$blue;
+
+      &:hover {
+        background: color.scale(variables.$blue, $lightness: -8%);
+      }
+    }
+  }
+
+  &--secondary {
+    background: transparent;
+    border: 2px solid currentColor;
+
+    &.btn--white {
+      color: white;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    &.btn--red {
+      color: variables.$redPrimary;
+
+      &:hover {
+        background: rgba(variables.$redPrimary, 0.1);
+      }
+    }
+  }
+}

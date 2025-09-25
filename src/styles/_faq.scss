@@ -1,0 +1,73 @@
+@use "./variables";
+
+.faq {
+  padding: 6rem 0;
+  color: variables.$whiteColor;
+  background-color: variables.$deep-dark;
+
+  &__heading {
+    font-size: 4.7rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 12rem;
+      height: 0.7rem;
+      background: variables.$redPrimary;
+      margin: 1rem auto 0;
+    }
+  }
+
+  &__list {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  &__item {
+    border-bottom: 1px solid #555;
+    padding: 1.6rem 0;
+
+    &--active {
+      .faq__question {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  &__icon {
+    font-size: 2rem;
+  }
+
+  &__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    font-size: 1.6rem;
+    color: #ccc;
+    line-height: 1.5;
+
+    p {
+      margin: 1rem 0;
+    }
+  }
+
+  &__item--active .faq__answer {
+    padding-top: 0.5rem;
+  }
+}
