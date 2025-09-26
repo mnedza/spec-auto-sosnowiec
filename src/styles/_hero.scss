@@ -97,7 +97,7 @@
 @media (max-width: 1600px) and (max-height: 700px) {
   .hero {
     &__subtitle {
-      margin-top: 8rem;
+      margin-top: 3.5rem;
       margin-bottom: 0;
 
       span {
@@ -148,7 +148,7 @@
     &__primary,
     &__secondary {
       margin-bottom: 0;
-      font-size: 2.5rem;
+      // font-size: 2.5rem;
     }
   }
 }
@@ -156,7 +156,7 @@
 @media (max-width: 576px) {
   .hero {
     &__subtitle {
-      margin-top: 15rem;
+      margin-top: 14rem;
       margin-bottom: 0;
 
       span {
@@ -165,8 +165,8 @@
     }
 
     &__title {
-      font-size: 2.8rem;
-      margin: 1rem 2rem;
+      font-size: 4rem;
+      margin: 0.5rem;
     }
 
     &__description {
@@ -192,7 +192,7 @@
     }
 
     &__title {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin: 1rem 2rem;
     }
 
@@ -202,7 +202,7 @@
     }
 
     &__primary {
-      font-size: 2rem;
+      // font-size: 2rem;
     }
   }
 }

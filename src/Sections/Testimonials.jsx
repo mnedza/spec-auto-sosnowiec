@@ -36,6 +36,7 @@ const testimonialsData = [
 ];
 
 const Testimonials = () => {
+  // eslint-disable-next-line
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -73,22 +74,20 @@ const Testimonials = () => {
           </a>
         </div>
 
-        <div className="testimonials__carousel">
-          <div className="testimonials__list">
-            {testimonialsData.map((testimonials) => {
-              return (
-                <TestimonialsItem
-                  key={testimonials.id}
-                  name={testimonials.name}
-                  avatar={testimonials.avatar}
-                  date={testimonials.date}
-                  stars={testimonials.stars}
-                  comment={testimonials.comment}
-                  link={testimonials.link}
-                />
-              );
-            })}
-          </div>
+        <div className="testimonials__list">
+          {testimonialsData.map((testimonials) => {
+            return (
+              <TestimonialsItem
+                key={testimonials.id}
+                name={testimonials.name}
+                avatar={testimonials.avatar}
+                date={testimonials.date}
+                stars={testimonials.stars}
+                comment={testimonials.comment}
+                link={testimonials.link}
+              />
+            );
+          })}
         </div>
       </div>
     </section>

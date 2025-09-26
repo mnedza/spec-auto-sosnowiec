@@ -1,14 +1,10 @@
 @use "./variables";
 
 .testimonials {
-  padding: 8rem 0;
-  background: #fff;
-
   &__header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4rem;
+    // margin-bottom: 4rem;
     flex-wrap: wrap;
   }
 
@@ -28,56 +24,31 @@
   }
 
   &__stars {
-    color: #ffa500;
-    margin-bottom: 0.5rem;
+    color: variables.$golden;
     font-size: 3rem;
     margin-left: 1rem;
   }
 
   & .testimonials__reviews-count {
-    color: #666;
+    color: variables.$gray-text;
     margin-left: 0.7rem;
     font-size: 1.2rem;
     font-style: italic;
   }
 
-  /* Karuzela */
   &__carousel {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 2rem;
-    position: relative;
   }
 
   &__list {
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
     gap: 2rem;
     flex: 1;
     padding: 1rem 0;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-  /* Pojedyncza opinia */
-  &__item {
-    min-width: 30rem;
-    max-width: 35rem;
-    flex: 0 0 auto;
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 1.2rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   &__person {
@@ -89,12 +60,12 @@
   &__avatar {
     width: 4rem;
     height: 4rem;
-    background: brown;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    background: rgb(209, 2, 2);
+    border-radius: 50%;
   }
 
   &__info {
@@ -122,12 +93,11 @@
   &__comment {
     font-size: 1.5rem;
     margin: 1.5rem 0;
-    color: #333;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   &__person-stars {
-    color: #ffa500;
+    color: variables.$golden;
     margin-bottom: 0.5rem;
     font-size: 2.5rem;
   }
@@ -150,25 +120,19 @@
 
   &__link {
     margin-left: 0.5rem;
-    font-size: 1.3rem;
-    color: #407efc;
-    text-decoration: underline;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.3rem;
+    color: variables.$blue;
+    text-decoration: underline;
   }
 }
 
-//
-
 .testimonials {
-  &__carousel {
-    overflow: hidden;
-  }
-
   &__list {
     display: flex;
-    flex-wrap: wrap; // <-- pozwala zawijać elementy
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
@@ -176,13 +140,10 @@
   }
 
   &__item {
-    min-width: 30rem;
     max-width: 35rem;
-    flex: 1 1 30rem; // <-- elastyczne szerokości
-    background: #fff;
-    border: 1px solid #eee;
+    border: 1px solid variables.$whiteColor;
     border-radius: 1.2rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -191,7 +152,6 @@
 
   @media (max-width: 768px) {
     &__item {
-      flex: 1 1 100%; // zajmuje całą szerokość na małych ekranach
       min-width: unset;
       max-width: unset;
     }

@@ -62,102 +62,37 @@
     color: variables.$gray-description;
   }
 }
-
-// @media (max-width: 768px) {
-//   .contact {
-//     &__container {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       flex-direction: column;
-//       width: 90vw;
-//     }
-
-//     &__info {
-//       margin-right: 3rem;
-//       display: block;
-//       margin: auto;
-//       // justify-content: center;
-//       // align-items: ;
-//     }
-//   }
-// }
-
-// @media (max-width: 768px) {
-//   .contact {
-//     &__container {
-//       flex-direction: column;
-//       align-items: center; // wyśrodkuj w pionie
-//       justify-content: center;
-//       width: 100%; // zajmij całą szerokość
-//       // gap: 3rem; // odstęp między info i mapą
-//     }
-
-//     &__info {
-//       width: 100%; // na mobile niech zajmuje całość
-//       // max-width: 70rem; // ale z limitem, żeby nie rozjeżdżało
-//       margin: 0 auto; // wyśrodkowanie
-//       // text-align: center; // wszystko ładnie na środku
-//     }
-
-//     &__map {
-//       width: 100%;
-//       height: 50rem;
-//       // max-width: 60rem; // mapa też ładnie ograniczona
-//       // height: 30rem; // nadaj wysokość na mobile
-//     }
-
-//     &__details {
-//       margin-left: 1rem; // usuń lewy margines na mobile
-//     }
-
-//     &__phone,
-//     &__address,
-//     &__open-hours {
-//       width: 100%;
-//       font-size: 1.5rem;
-//       padding: 2rem auto;
-//       display: flex;
-//       // justify-content: flex-;
-//       align-items: flex-start;
-//     }
-//   }
-// }
 @media (max-width: 768px) {
   .contact {
     &__container {
       flex-direction: column;
-      align-items: center; // wyśrodkuj w pionie
+      align-items: center;
       justify-content: center;
     }
     &__info {
       margin: 0 2rem;
       width: 30rem;
-      align-items: center; // wycentruj całą kolumnę
-      text-align: center; // tekst też na środku
+      align-items: center;
+      text-align: center;
     }
 
     &__phone,
     &__address,
     &__open-hours {
-      justify-content: center; // ikona + tekst razem w środku
+      justify-content: center;
     }
 
     &__details {
       margin: 0;
       padding-left: 4rem;
       font-size: 1.5rem;
-      // padding: 0 5rem;
-      // margin-left: 1rem;
-      text-align: left; // mały odstęp między ikoną a tekstem
+      text-align: left;
     }
 
     &__map {
       margin: 0;
       width: 90%;
       height: 50rem;
-      // max-width: 60rem; // mapa też ładnie ograniczona
-      // height: 30rem; // nadaj wysokość na mobile
     }
   }
 }

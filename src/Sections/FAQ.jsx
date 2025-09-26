@@ -58,18 +58,20 @@ const FAQ = () => {
 
   return (
     <section className="faq" id="faq">
-      <div className="faq__section wrapper">
-        <h2 className="faq__heading">Najczęściej zadawane pytania</h2>
-        <div className="faq__list">
-          {faqData.map((item, index) => (
-            <FAQItem
-              key={index}
-              question={item.question}
-              answer={item.answer}
-              isActive={activeIndex === index}
-              onClick={() => toggleFAQ(index)}
-            />
-          ))}
+      <div className="faq__content">
+        <div className="faq__section wrapper">
+          <h2 className="faq__title">Najczęściej zadawane pytania</h2>
+          <div className="faq__list">
+            {faqData.map((item, index) => (
+              <FAQItem
+                key={index}
+                question={item.question}
+                answer={item.answer}
+                isActive={activeIndex === index}
+                onClick={() => toggleFAQ(index)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

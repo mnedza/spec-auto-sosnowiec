@@ -114,3 +114,36 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  .about,
+  .benefits,
+  .services,
+  .faq,
+  .testimonials,
+  .contact {
+    &__title {
+      font-size: 3.5rem;
+    }
+  }
+  .preheader {
+    &__item {
+      padding: 0rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    &__text {
+      font-size: 0.1rem;
+      font-weight: 400;
+
+      &--bold {
+        font-weight: 600;
+        font-style: italic;
+      }
+    }
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+}
