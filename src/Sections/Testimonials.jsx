@@ -60,7 +60,9 @@ const Testimonials = () => {
             <div className="testimonials__details">
               <span className="testimonials__score">5.0</span>
               <span className="testimonials__stars">★★★★★</span>
-              <span className="testimonials__reviews-count">46 opinii</span>
+              <span className="testimonials__reviews-count">
+                Ponad 45 opinii
+              </span>
             </div>
           </div>
           <a

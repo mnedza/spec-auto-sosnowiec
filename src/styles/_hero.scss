@@ -155,6 +155,9 @@
 
 @media (max-width: 576px) {
   .hero {
+    &__arrow {
+      display: none;
+    }
     &__subtitle {
       margin-top: 14rem;
       margin-bottom: 0;
@@ -180,6 +183,14 @@
   }
 }
 
+// @media (max-width: 450px) {
+//   .hero {
+//     &__arrow {
+//       display: none;
+//     }
+//   }
+// }
+
 @media (max-width: 350px) {
   .hero {
     &__subtitle {
@@ -199,10 +210,6 @@
     &__description {
       font-size: 0.8rem;
       margin: 0.5rem 2rem;
-    }
-
-    &__primary {
-      // font-size: 2rem;
     }
   }
 }

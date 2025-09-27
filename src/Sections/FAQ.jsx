@@ -11,11 +11,12 @@ const faqData = [
   },
   {
     question: "Jakie samochody obsługujecie?",
-    answer: "Samochody osobowe, dostawcze oraz motocykle.",
+    answer: "Obsługujemy wszystkie samochody osobowe.",
   },
   {
     question: "Czy mogę przyjechać bez umawiania wizyty?",
-    answer: "Tak, ale zalecamy kontakt telefoniczny.",
+    answer:
+      "Tak, ale zalecamy kontakt telefoniczny - 512 722 296 Michał Piątkowski.",
   },
   {
     question: "Ile kosztuje holowanie lub naprawa?",
@@ -23,7 +24,8 @@ const faqData = [
   },
   {
     question: "Jak dojechać do warsztatu?",
-    answer: "Znajdziesz nas w Sosnowcu przy ul. Dobrzańskiego 35.",
+    answer:
+      "Znajdziesz nas w Sosnowcu przy ul. Dobrzańskiego 35. Dojazd możliwy jest od drugiej strony (od osiedla). Widoczny będzie parking z 2 garażami - to my!",
   },
 ];
 
