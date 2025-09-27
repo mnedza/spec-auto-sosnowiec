@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/spec-auto-sosnowiec/static/css/main.25ff35a0.css",
-    "main.js": "/spec-auto-sosnowiec/static/js/main.a4f379a1.js",
+    "main.css": "/spec-auto-sosnowiec/static/css/main.a4bfd438.css",
+    "main.js": "/spec-auto-sosnowiec/static/js/main.cfd91fd6.js",
     "static/media/hero-bg.png": "/spec-auto-sosnowiec/static/media/hero-bg.a51433ab0fb8848cf4d7.png",
     "static/media/about-us-pic.png": "/spec-auto-sosnowiec/static/media/about-us-pic.4b569759f09e73a346ab.png",
     "static/media/services_item2.png": "/spec-auto-sosnowiec/static/media/services_item2.0e73ef1590c27de812fe.png",
@@ -9,11 +9,11 @@
     "static/media/services_item3.png": "/spec-auto-sosnowiec/static/media/services_item3.aca56036bb146d787666.png",
     "static/media/logo-nobcg.png": "/spec-auto-sosnowiec/static/media/logo-nobcg.28e4280e638b385358ea.png",
     "index.html": "/spec-auto-sosnowiec/index.html",
-    "main.25ff35a0.css.map": "/spec-auto-sosnowiec/static/css/main.25ff35a0.css.map",
-    "main.a4f379a1.js.map": "/spec-auto-sosnowiec/static/js/main.a4f379a1.js.map"
+    "main.a4bfd438.css.map": "/spec-auto-sosnowiec/static/css/main.a4bfd438.css.map",
+    "main.cfd91fd6.js.map": "/spec-auto-sosnowiec/static/js/main.cfd91fd6.js.map"
   },
   "entrypoints": [
-    "static/css/main.25ff35a0.css",
-    "static/js/main.a4f379a1.js"
+    "static/css/main.a4bfd438.css",
+    "static/js/main.cfd91fd6.js"
   ]
 }
